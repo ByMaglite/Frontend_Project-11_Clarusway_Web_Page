@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 25px;
+    
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color:#35424A;
+    border-bottom: 3px solid #A9508B;
+    display: flex;
+    justify-content:space-between;
+    padding:30px;
+}
+
+#header {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+#header span {
+    color:#A9508B;
+}
+
+#buttons {
+    width:20%;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:10px 0px;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+}
+
+.button2 {
+    color:#A9508B;
+}
+
+
+#midBar {
+    width:100%;
+    height:100px;
+    background-color:#35424A;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding:30px;
+}
+
+.secLeft {
+    color:white;
+}
+
+#subscribeİnp {
+    width:15rem;
+    height:2.5rem;
+}
+
+#subscribeBut {
+    text-decoration: none;
+    color: white;
+    background-color: #E8491D;
+    border: 10px solid #E8491D;
+}
+
+
+main {
+    width:100%;
+    height:38rem; 
+    padding: 15px 20px 0px 40px;  
+    display:flex;
+    flex-direction:row;
+}
+
+#mainLeft {
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+}
+
+.mainRight {
+    margin-left:50px;
+    padding-bottom:20px;
+}
+
+#rightText,
+.mainBottom {
+    background-color:#35424A;
+    color: white;
+    padding: 20px;
+}
+#rightText2{
+    background-color:#white;
+    color: black;
+    padding: 20px;
+}
+
+footer {
+    border: 1px solid black;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    padding: 32.5px 0px;
+    background-color: #35424A;
+    color: white;
+}
+
+footer img {
+    width:200px;
+}
+
+
+@media (max-width: 745px) {
+    nav,
+    #midBar {
+        flex-direction: column;
+    }
+
+    nav {
+        height:150px;
+    }
+
+    .button {
+        margin-right: 20px;
+    }
+
+    nav #buttons {
+        margin: 20px 0px 10px 0px;
+        justify-content:flex-start;
+    }
+
+    main {
+        overflow: auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .inf p {
+        font-size:12px;
+    }
+
+    main p {
+        font-size:12px;       
+    }
+
+    .mainRight {
+        margin: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    #midBar {
+        height: 200px;
+    }
+    .secRight {
+        flex-direction: column;
+    }
+
+    #subscribeİnp {
+        margin-bottom: 12px;
+    }
+}

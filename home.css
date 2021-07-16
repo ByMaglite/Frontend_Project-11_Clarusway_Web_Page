@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color:#35424A;
+    border-bottom: 3px solid #A9508B;
+    display: flex;
+    justify-content:space-between;
+    padding:30px;
+}
+
+#john{
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    width:9%;
+    height:300%;
+    overflow:auto;
+}
+
+#header {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+#header span {
+    color:#A9508B;
+}
+
+#buttons {
+    width:20%;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:10px 0px;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+}
+
+.button1 {
+    color:#A9508B;
+}
+
+
+main {
+    width:100%;
+    height: 400px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-image:url("./img/showcase.jpg");
+    background-position: center;
+}
+
+#mainHead {
+    color: white;
+    font-size: 1.3rem;
+}
+
+#midBar {
+    width:100%;
+    height:100px;
+    background-color:#35424A;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding:30px;
+}
+
+.secLeft {
+    color:white;
+}
+
+#subscribeİnp {
+    width:15rem;
+    height:2.5rem;
+}
+
+#subscribeBut {
+    text-decoration: none;
+    color: white;
+    background-color: #E8491D;
+    border: 10px solid #E8491D;
+}
+
+
+#infoBar {
+    width:100%;
+    height:250px;
+    display: flex;
+    justify-content:space-around;
+    padding:20px;
+    overflow: auto;
+}
+
+#infoBar img {
+    width: 70px;
+}
+
+.inf {
+    text-align: center;
+}
+
+
+footer {
+    border: 1px solid black;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    padding: 16.5px 0px;
+    background-color: #35424A;
+    color: white;
+}
+
+footer img {
+    width:150px;
+}
+
+
+@media (max-width: 745px) {
+    main,
+    nav,
+    #midBar {
+        flex-direction: column;
+    }
+
+    nav {
+        height:220px;
+    }
+
+    .button {
+        margin-right: 20px;
+    }
+
+    nav #buttons {
+        margin: 20px 0px 10px 0px;
+        justify-content:flex-start;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .inf p {
+        font-size:12px;
+    }
+
+    h1 {
+        line-height:1;
+    }
+
+    #infoBar img {
+        width: 50px;
+    }
+}
+
+@media (max-width:400px) {
+    #midBar {
+        height: 200px;
+    }
+    .secRight {
+        flex-direction: column;
+    }
+
+    #subscribeİnp {
+        margin-bottom: 12px;
+    }
+}
